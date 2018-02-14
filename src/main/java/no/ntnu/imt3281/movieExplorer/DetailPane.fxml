@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="545.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="no.ntnu.imt3281.movieExplorer.DetailPane">
+   <children>
+      <Label fx:id="movieName" alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="14.0" prefHeight="50.0" prefWidth="478.0" text="MOVIE NAME" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="posterImage" fitHeight="300.0" fitWidth="200.0" layoutX="14.0" layoutY="64.0" pickOnBounds="true">
+         <viewport>
+            <Rectangle2D width="200.0" />
+         </viewport>
+      </ImageView>
+      <Label fx:id="movieDescription" alignment="TOP_LEFT" layoutX="224.0" layoutY="64.0" prefHeight="165.0" prefWidth="306.0" text="Description goes here" wrapText="true" />
+      <Label alignment="TOP_LEFT" layoutX="224.0" layoutY="229.0" prefHeight="19.0" prefWidth="43.0" text="Genres" wrapText="true" />
+      <Label fx:id="movieGenres" alignment="TOP_LEFT" layoutX="278.0" layoutY="229.0" prefHeight="131.0" prefWidth="231.0" text="Insert genres here" wrapText="true" />
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</Pane>
